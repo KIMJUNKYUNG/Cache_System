@@ -108,3 +108,6 @@ https://developers.google.com/web/fundamentals/performance/optimizing-content-ef
 * ( 예를 들어 소비자가 미국에 있으면 속도가 매우 느리다. 그러면 사용자와 가까운 곳에 캐싱서버라는 것을 둘 수 있다. 웹서버의 내용을 캐싱서버에 캐싱해두면 사용자는 캐싱서버에 접속하는 것을 통해서 데이터를 고속으로 가져갈 수 있게 된다.  이렇게 되면 내 컴퓨터에 있는 캐시가 있고, 캐싱서버에 있는 캐시가 있다. 보안이 필요하면 private를 하면 캐싱서버가 이것을 저장하지 않는다, public은 캐싱서버가 이것을 저장한다. )
 * maximum age를 통해서 수명을 정할수도있다.
 * **ETag header는 항상 넣어라^^**
+
+APPlication cache를 활용하면 인터넷이 끊겨있어도 웹 애플리케이션이 동작하게 할 수 있다. Web인데 마치 app처럼 동작하게 할 수 있다.
+caching server **memched**는 메모리에 캐시를 저장해서 엄청나게 빠르게 할 수 있다. 캐싱 서버를 전세계에 CDN (conten delivery network) 나와 다른지역에 있는 고객들도 응대할 수 있는 서비스이다.
